@@ -1,9 +1,10 @@
 ---
-layout: single
 title: "Sobre esse Projeto"
-permalink: /sobre/
+layout: single
+permalink: /amor-psicanalise/sobre/
 author_profile: true
 ---
+
 
 Este site nasce como um espaço de encontro entre ideias, palavras e experiências.
 
