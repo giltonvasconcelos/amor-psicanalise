@@ -3,6 +3,8 @@ title: "Sobre esse Projeto"
 layout: single
 permalink: /amor-psicanalise/sobre/
 author_profile: true
+sidebar:
+  nav: sidebar  # LINHA ADICIONADA
 ---
 
 
