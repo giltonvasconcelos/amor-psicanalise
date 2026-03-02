@@ -1,11 +1,9 @@
 ---
-layout: single
 title: "A Psicanálise"
-permalink: /a-psicanalise/
-author_profile: true
-toc: true
-toc_label: "Neste artigo"
+layout: single
+permalink: /amor-psicanalise/a-psicanalise/
 ---
+
 
 ## O que é a Psicanálise?
 
