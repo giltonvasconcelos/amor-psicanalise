@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "O Amor na Transferência: Reflexões Psicanalíticas"
-date: 2026-03-10
+date: 2026-03-02
 categories: [psicanálise, clínica, transferência]
 tags: [freud, lacan, amor, análise, desejo]
 author: Gilton Vasconcelos
