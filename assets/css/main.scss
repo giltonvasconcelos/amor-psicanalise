@@ -6,13 +6,28 @@ $sidebar-bg: #faf7f2;
 $sidebar-link: #5a4a42;
 $sidebar-hover: #d4a5a5;
 
-// Estilo da sidebar
+// FORÇAR A SIDEBAR A APARECER - NOVAS LINHAS ADICIONADAS
 .sidebar {
+  display: block !important;
+  visibility: visible !important;
+  width: 250px !important;
+  float: left !important;
   background-color: $sidebar-bg;
   border-right: 1px solid #e5d9d0;
-  
+  position: relative !important;
+  z-index: 10 !important;
+}
+
+// Ajustar o conteúdo principal para não ficar por baixo da sidebar
+.main, .page, .archive, .splash {
+  margin-left: 270px !important;  // 250px + 20px de respiro
+  width: calc(100% - 270px) !important;
+}
+
+// Estilização interna da sidebar (seu código original melhorado)
+.sidebar {
   .nav__list {
-    padding: 1em;
+    padding: 1.5em 1em;
     
     .nav__title {
       color: $sidebar-link;
@@ -22,21 +37,27 @@ $sidebar-hover: #d4a5a5;
       margin-bottom: 0.5em;
       text-transform: uppercase;
       letter-spacing: 1px;
+      border-bottom: 1px solid $sidebar-hover;
+      padding-bottom: 0.3em;
     }
     
     .nav__items {
+      margin-bottom: 1.5em;
+      
       a {
         color: $sidebar-link;
-        padding: 0.3em 0.5em;
+        padding: 0.5em 0.8em;
         display: block;
         border-radius: 4px;
         transition: all 0.3s;
+        text-decoration: none;
+        font-size: 1em;
         
         &:hover {
           background-color: $sidebar-hover;
           color: white;
           text-decoration: none;
-          padding-left: 1em;
+          padding-left: 1.2em;
         }
         
         &.active {
@@ -48,19 +69,25 @@ $sidebar-hover: #d4a5a5;
   }
 }
 
-// Responsividade: menu vira dropdown em mobile
+// Responsividade para mobile
 @media (max-width: 768px) {
   .sidebar {
-    position: relative;
-    width: 100%;
+    width: 100% !important;
+    float: none !important;
+    position: relative !important;
+    margin-bottom: 1em;
+  }
+  
+  .main, .page, .archive, .splash {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+  
+  .sidebar .nav__list .nav__items {
+    display: none;
     
-    .nav__list {
-      .nav__items {
-        display: none; // Esconde por padrão
-        &.active {
-          display: block; // Mostra quando ativo
-        }
-      }
+    &.active {
+      display: block;
     }
   }
 }
