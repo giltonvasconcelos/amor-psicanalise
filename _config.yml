@@ -58,19 +58,16 @@ comments:
   provider: false
 
 # ---------------------------------------------------------------
-# MENU E NAVEGAÇÃO LATERAL
+# MENU DE NAVEGAÇÃO
 # ---------------------------------------------------------------
 navigation:
   main:
     - title: "Início"
       url: /amor-psicanalise/
 
-# Configuração da sidebar
-sidebar:
-  - title: "Navegação"
-    nav: sidebar  # Referencia o navigation.yml
-
-# Ativar navegação por categorias
+# ---------------------------------------------------------------
+# ARQUIVOS DE CATEGORIAS E TAGS
+# ---------------------------------------------------------------
 category_archive:
   type: liquid
   path: /amor-psicanalise/categorias/
@@ -79,52 +76,47 @@ tag_archive:
   type: liquid
   path: /amor-psicanalise/tags/
 
-# Layout padrão com sidebar
 # ---------------------------------------------------------------
-# ATIVAR SIDEBAR EM TODAS AS PÁGINAS
-# ---------------------------------------------------------------
-defaults:
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      sidebar:
-        nav: sidebar
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      sidebar:
-        nav: sidebar
-
-# ---------------------------------------------------------------
-# PAGINACAO
-# ---------------------------------------------------------------
-paginate: 6
-paginate_path: /amor-psicanalise/page:num/
-
-# ---------------------------------------------------------------
-# DEFAULTS
+# CONFIGURAÇÕES PADRÃO (CORRIGIDO - UNIFICADO)
 # ---------------------------------------------------------------
 defaults:
+  # Padrão para posts
   - scope:
       path: ""
       type: posts
     values:
       layout: single
       author_profile: true
+      sidebar:
+        nav: sidebar
       read_time: true
       share: true
       related: true
       show_date: true
+  
+  # Padrão para páginas
   - scope:
       path: ""
       type: pages
     values:
       layout: single
       author_profile: true
+      sidebar:
+        nav: sidebar
+  
+  # Exceção: página inicial (sem sidebar para layout splash)
+  - scope:
+      path: "index.md"
+    values:
+      layout: splash
+      author_profile: false
+      sidebar: false
+
+# ---------------------------------------------------------------
+# PAGINAÇÃO
+# ---------------------------------------------------------------
+paginate: 6
+paginate_path: /amor-psicanalise/page:num/
 
 # ---------------------------------------------------------------
 # PLUGINS
@@ -145,7 +137,7 @@ search: true
 search_full_content: true
 
 # ---------------------------------------------------------------
-# RODAPE
+# RODAPÉ
 # ---------------------------------------------------------------
 footer:
   links:
@@ -170,7 +162,7 @@ footer:
 #     anonymize_ip: true
 
 # ---------------------------------------------------------------
-# EXCLUDE
+# ARQUIVOS EXCLUÍDOS DO BUILD
 # ---------------------------------------------------------------
 exclude:
   - Gemfile
