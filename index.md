@@ -1,7 +1,7 @@
 ---
 layout: home
-description: "A responsive Jekyll theme"
-tags: [Jekyll, theme, responsive, blog, template]
+description: "Um Projeto de Saúde Mental"
+tags: [Psicanálise, Saúde Mental, Autocuidado, Autoconhecimento, inteligência Emocional)]
 image:
   feature: texture-feature-01.jpg
   credit: Virginie Moerenhout
