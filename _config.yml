@@ -1,13 +1,14 @@
 # =============================================================
-#   _config.yml - Blog de Saúde Mental
+#   _config.yml - Amor e Psicanalise
 #   Tema: Minimal Mistakes | Autor: Gilton Vasconcelos
 # =============================================================
 
-title: "Mente em Equilíbrio"
-subtitle: "Reflexões sobre saúde mental e bem-estar"
+title: "Amor e Psicanalise"
+subtitle: "Entre o inconsciente e o amor, novos caminhos de autenticidade"
 description: >-
-  Um espaço acolhedor para falar sobre saúde mental, autocuidado
-  e bem-estar emocional. Por Gilton Vasconcelos.
+  O amor marca nossas vidas — quando existe, quando falta ou quando é insuficiente.
+  Aqui, reflexoes se transformam em janelas abertas para o sentir e o pensar.
+  Por Gilton Vasconcelos.
 
 url: "https://giltonvasconcelos.github.io"
 baseurl: ""
@@ -19,25 +20,27 @@ repository: "giltonvasconcelos/giltonvasconcelos.github.io"
 author:
   name: "Gilton Vasconcelos"
   avatar: "/assets/images/avatar.jpg"
-  bio: "Apaixonado por saúde mental e bem-estar. Compartilho reflexões e recursos para cuidar da mente."
+  bio: >-
+    "O amor marca nossas vidas — quando existe, quando falta ou quando é insuficiente.
+    Podemos transformar essas marcas em licoes, e nao em correntes."
   location: "Brasil"
   links:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/gilton__vasconcelos/"
+    - label: "WhatsApp"
+      icon: "fab fa-fw fa-whatsapp"
+      url: "https://wa.me/message/TMFLTRW6SXGFI1"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/giltonvasconcelos"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: ""   # adicione seu @
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: ""   # adicione seu perfil
 
 # ---------------------------------------------------------------
-# TEMA — Paleta Neutra (bege, cinza, branco)
+# TEMA - Paleta Neutra (bege, cinza, branco)
 # ---------------------------------------------------------------
 remote_theme: "mmistakes/minimal-mistakes@4.26.2"
 minimal_mistakes_skin: "air"
-# Outras opções: "default" | "aqua" | "contrast" | "dark" | "mint"
+# Outras opcoes: "default" | "aqua" | "contrast" | "dark" | "mint"
 
 # ---------------------------------------------------------------
 # IDIOMA E FUSO
@@ -52,30 +55,28 @@ lang: pt-BR
 read_time: true
 words_per_minute: 200
 comments:
-  provider: false  # habilite depois com "giscus" ou "disqus"
+  provider: false
 
 # ---------------------------------------------------------------
-# MENU DE NAVEGAÇÃO
+# MENU DE NAVEGACAO (espelhando seu Google Sites)
 # ---------------------------------------------------------------
 navigation:
   main:
-    - title: "Início"
+    - title: "Inicio"
       url: /
-    - title: "Sobre Mim"
-      url: /sobre/
-    - title: "Artigos"
+    - title: "A Psicanalise"
+      url: /a-psicanalise/
+    - title: "Artigos e Reflexoes"
       url: /artigos/
-    - title: "Categorias"
-      url: /categorias/
-    - title: "Tags"
-      url: /tags/
-    - title: "Portfólio"
-      url: /portfolio/
+    - title: "Sobre esse Projeto"
+      url: /sobre/
+    - title: "Perguntas Frequentes"
+      url: /faq/
     - title: "Contato"
       url: /contato/
 
 # ---------------------------------------------------------------
-# PAGINAÇÃO
+# PAGINACAO
 # ---------------------------------------------------------------
 paginate: 6
 paginate_path: /page:num/
@@ -99,21 +100,7 @@ defaults:
       type: pages
     values:
       layout: single
-      author_profile: false
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      share: true
-
-# ---------------------------------------------------------------
-# COLEÇÕES
-# ---------------------------------------------------------------
-collections:
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
+      author_profile: true
 
 # ---------------------------------------------------------------
 # PLUGINS
@@ -132,6 +119,22 @@ plugins:
 og_image: "/assets/images/og-default.jpg"
 search: true
 search_full_content: true
+
+# ---------------------------------------------------------------
+# RODAPE
+# ---------------------------------------------------------------
+footer:
+  links:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/gilton__vasconcelos/"
+    - label: "WhatsApp"
+      icon: "fab fa-fw fa-whatsapp"
+      url: "https://wa.me/message/TMFLTRW6SXGFI1"
+  text: >-
+    © 2026 Gilton Vasconcelos. Todos os direitos reservados. |
+    <a href="/termos-de-uso">Termos de Uso</a> |
+    <a href="/politica-de-privacidade">Politica de Privacidade</a>
 
 # ---------------------------------------------------------------
 # ANALYTICS (descomente quando tiver o ID)
