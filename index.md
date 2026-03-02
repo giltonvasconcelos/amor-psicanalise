@@ -2,9 +2,12 @@
 layout: home
 title: "Amor e Psicanálise"
 author_profile: true
+sidebar:
+  nav: sidebar  # ESSA LINHA É CRUCIAL
 header:
   overlay_color: "#f5f0eb"
   overlay_filter: 0.3
+  
 excerpt: >-
   "O amor marca nossas vidas — quando existe, quando falta ou quando é insuficiente.
   Podemos transformar essas marcas em lições, e não em correntes."
