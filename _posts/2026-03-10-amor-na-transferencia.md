@@ -6,6 +6,8 @@ categories: [psicanálise, clínica, transferência]
 tags: [freud, lacan, amor, análise, desejo]
 author: Gilton Vasconcelos
 read_time: true
+sidebar:
+  nav: sidebar
 comments: true
 share: true
 related: true
