@@ -1,0 +1,15 @@
+# _data/navigation.yml
+
+main:
+  - title: "Início"
+    url: /amor-psicanalise/
+  - title: "A Psicanálise"
+    url: /amor-psicanalise/a-psicanalise/
+  - title: "Artigos"
+    url: /amor-psicanalise/artigos/
+  - title: "Sobre"
+    url: /amor-psicanalise/sobre/
+  - title: "FAQ"
+    url: /amor-psicanalise/faq/
+  - title: "Contato"
+    url: /amor-psicanalise/contato/
