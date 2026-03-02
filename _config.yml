@@ -58,22 +58,49 @@ comments:
   provider: false
 
 # ---------------------------------------------------------------
-# MENU DE NAVEGACAO
+# MENU E NAVEGAÇÃO LATERAL
 # ---------------------------------------------------------------
 navigation:
   main:
     - title: "Início"
       url: /amor-psicanalise/
-    - title: "A Psicanálise"
-      url: /amor-psicanalise/a-psicanalise/
-    - title: "Artigos e Reflexões"
-      url: /amor-psicanalise/artigos/
-    - title: "Sobre esse Projeto"
-      url: /amor-psicanalise/sobre/
-    - title: "Perguntas Frequentes"
-      url: /amor-psicanalise/faq/
-    - title: "Contato"
-      url: /amor-psicanalise/contato/
+
+# Configuração da sidebar
+sidebar:
+  - title: "Navegação"
+    nav: sidebar  # Referencia o navigation.yml
+
+# Ativar navegação por categorias
+category_archive:
+  type: liquid
+  path: /amor-psicanalise/categorias/
+
+tag_archive:
+  type: liquid
+  path: /amor-psicanalise/tags/
+
+# Layout padrão com sidebar
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: false  # Desliga perfil na direita
+      sidebar:
+        nav: sidebar  # Ativa menu na esquerda
+      read_time: true
+      share: true
+      related: true
+      
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: false
+      sidebar:
+        nav: sidebar
 
 # ---------------------------------------------------------------
 # PAGINACAO
