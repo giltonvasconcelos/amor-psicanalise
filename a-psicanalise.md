@@ -2,6 +2,8 @@
 title: "A Psicanálise"
 layout: single
 permalink: /amor-psicanalise/a-psicanalise/
+sidebar:
+  nav: sidebar  # LINHA ADICIONADA
 ---
 
 
