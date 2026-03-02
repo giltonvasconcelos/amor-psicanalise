@@ -3,6 +3,8 @@ title: "Artigos e Reflexões"
 layout: posts
 permalink: /amor-psicanalise/artigos/
 author_profile: true
+sidebar:
+  nav: sidebar  # LINHA ADICIONADA
 ---
 
 Este espaço reúne palavras que tocam, questionam e inspiram.
