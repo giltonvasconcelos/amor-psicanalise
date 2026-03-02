@@ -3,6 +3,8 @@ title: "Perguntas Frequentes"
 layout: single
 permalink: /amor-psicanalise/faq/
 author_profile: true
+sidebar:
+  nav: sidebar  # LINHA ADICIONADA
 ---
 
 ## Dúvidas comuns sobre psicanálise
