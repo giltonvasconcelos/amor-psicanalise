@@ -1,116 +1,154 @@
-title:            Site Title
-description:      Describe your website.
-# Your site's domain goes here. Leave localhost server or blank when working locally.
-url:              http://localhost:4000
-disqus_shortname: 
+# =============================================================
+#   _config.yml - Blog de Saúde Mental
+#   Tema: Minimal Mistakes | Autor: Gilton Vasconcelos
+# =============================================================
 
-# Owner/author information
-owner:
-  name:           Your Name
-  avatar:         bio-photo.jpg
-  bio:            "Describe your self."
-  email:          your@email.com
-  # Social networking links are used in author-bio sidebar. Update and remove as you like.
-  twitter:        twitortat
-  facebook:
-  github:
-  stackoverflow:
-  linkedin:
-  instagram:
-  lastfm:
-  tumblr:
-  pinterest:
-  foursquare:
-  steam:
-  dribbble:
-  # For Google Authorship https://plus.google.com/authorship
-  google_plus:
+title: "Mente em Equilíbrio"
+subtitle: "Reflexões sobre saúde mental e bem-estar"
+description: >-
+  Um espaço acolhedor para falar sobre saúde mental, autocuidado
+  e bem-estar emocional. Por Gilton Vasconcelos.
 
-# Author(s) information
-authors:
-  author1:
-    name:           Arvi Krishnaswamy
-    avatar:         bio-photo.jpg
-    bio:            "Describe your self."
-    email:          your@email.com
-    # Social networking links are used in author-bio sidebar. Update and remove as you like.
-    twitter:        twitortat
-    facebook:
-    github:          arg0s
-    stackoverflow:
-    linkedin:
-    instagram:
-    lastfm:
-    tumblr:
-    pinterest:
-    foursquare:
-    steam:
-    dribbble:
-    # For Google Authorship https://plus.google.com/authorship
-    google_plus:
-  author2:
-    name:           Don Quixote
-    avatar:         bio-photo.jpg
-    bio:            "Describe your self."
-    email:          your@email.com
-    # Social networking links are used in author-bio sidebar. Update and remove as you like.
-    twitter:
-    facebook:
-    github:
-    stackoverflow:
-    linkedin:
-    instagram:
-    lastfm:
-    tumblr:
-    pinterest:
-    foursquare:
-    steam:
-    dribbble:
-    # For Google Authorship https://plus.google.com/authorship
-    google_plus:
+url: "https://giltonvasconcelos.github.io"
+baseurl: ""
+repository: "giltonvasconcelos/giltonvasconcelos.github.io"
 
+# ---------------------------------------------------------------
+# AUTOR
+# ---------------------------------------------------------------
+author:
+  name: "Gilton Vasconcelos"
+  avatar: "/assets/images/avatar.jpg"
+  bio: "Apaixonado por saúde mental e bem-estar. Compartilho reflexões e recursos para cuidar da mente."
+  location: "Brasil"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/giltonvasconcelos"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: ""   # adicione seu @
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: ""   # adicione seu perfil
 
-# Analytics and webmaster tools stuff goes here
-google_analytics:
-google_verify:
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:
+# ---------------------------------------------------------------
+# TEMA — Paleta Neutra (bege, cinza, branco)
+# ---------------------------------------------------------------
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+minimal_mistakes_skin: "air"
+# Outras opções: "default" | "aqua" | "contrast" | "dark" | "mint"
 
-# Links to include in top navigation
-# For external links add external: true
-links:
-  - title: About
-    url: /about/
-  - title: Posts
-    url: /posts/
-  - title: Theme Setup
-    url: /theme-setup/
-  - title: About Arvi
-    url: http://www.arg0s.in
-    external: true
+# ---------------------------------------------------------------
+# IDIOMA E FUSO
+# ---------------------------------------------------------------
+locale: "pt-BR"
+timezone: "America/Recife"
+lang: pt-BR
 
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    Asia/Kolkota
-future:      true
-pygments:    true
-markdown:    kramdown
+# ---------------------------------------------------------------
+# POSTS
+# ---------------------------------------------------------------
+read_time: true
+words_per_minute: 200
+comments:
+  provider: false  # habilite depois com "giscus" ou "disqus"
 
-# https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title/
+# ---------------------------------------------------------------
+# MENU DE NAVEGAÇÃO
+# ---------------------------------------------------------------
+navigation:
+  main:
+    - title: "Início"
+      url: /
+    - title: "Sobre Mim"
+      url: /sobre/
+    - title: "Artigos"
+      url: /artigos/
+    - title: "Categorias"
+      url: /categorias/
+    - title: "Tags"
+      url: /tags/
+    - title: "Portfólio"
+      url: /portfolio/
+    - title: "Contato"
+      url: /contato/
 
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  use_coderay: false
+# ---------------------------------------------------------------
+# PAGINAÇÃO
+# ---------------------------------------------------------------
+paginate: 6
+paginate_path: /page:num/
 
-  coderay:
-    coderay_line_numbers:
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
+# ---------------------------------------------------------------
+# DEFAULTS
+# ---------------------------------------------------------------
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      share: true
+      related: true
+      show_date: true
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: false
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      share: true
 
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+# ---------------------------------------------------------------
+# COLEÇÕES
+# ---------------------------------------------------------------
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+
+# ---------------------------------------------------------------
+# PLUGINS
+# ---------------------------------------------------------------
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-seo-tag
+
+# ---------------------------------------------------------------
+# SEO E BUSCA
+# ---------------------------------------------------------------
+og_image: "/assets/images/og-default.jpg"
+search: true
+search_full_content: true
+
+# ---------------------------------------------------------------
+# ANALYTICS (descomente quando tiver o ID)
+# ---------------------------------------------------------------
+# analytics:
+#   provider: "google-gtag"
+#   google:
+#     tracking_id: "G-XXXXXXXXXX"
+#     anonymize_ip: true
+
+# ---------------------------------------------------------------
+# EXCLUDE
+# ---------------------------------------------------------------
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle
+  - .jekyll-cache
+  - README.md
