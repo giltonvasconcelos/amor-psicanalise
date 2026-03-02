@@ -1,7 +1,7 @@
 ---
-layout: archive
 title: "Artigos e Reflexões"
-permalink: /artigos/
+layout: posts
+permalink: /amor-psicanalise/artigos/
 author_profile: true
 ---
 
