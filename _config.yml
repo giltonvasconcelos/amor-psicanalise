@@ -1,28 +1,29 @@
 # =============================================================
 #   _config.yml - Amor e Psicanalise
-#   Tema: Minimal Mistakes | Autor: Gilton Vasconcelos
+#   Repositorio: giltonvasconcelos/amor-psicanalise
 # =============================================================
 
-title: "Amor e Psicanalise"
+title: "Amor e Psicanálise"
 subtitle: "Entre o inconsciente e o amor, novos caminhos de autenticidade"
 description: >-
   O amor marca nossas vidas — quando existe, quando falta ou quando é insuficiente.
-  Aqui, reflexoes se transformam em janelas abertas para o sentir e o pensar.
+  Aqui, reflexões se transformam em janelas abertas para o sentir e o pensar.
   Por Gilton Vasconcelos.
 
 url: "https://giltonvasconcelos.github.io"
-baseurl: ""
-repository: "giltonvasconcelos/giltonvasconcelos.github.io"
+baseurl: "/amor-psicanalise"
+
+repository: "giltonvasconcelos/amor-psicanalise"
 
 # ---------------------------------------------------------------
 # AUTOR
 # ---------------------------------------------------------------
 author:
   name: "Gilton Vasconcelos"
-  avatar: "/assets/images/avatar.jpg"
+  avatar: "/amor-psicanalise/assets/images/avatar.jpg"
   bio: >-
     "O amor marca nossas vidas — quando existe, quando falta ou quando é insuficiente.
-    Podemos transformar essas marcas em licoes, e nao em correntes."
+    Podemos transformar essas marcas em lições, e não em correntes."
   location: "Brasil"
   links:
     - label: "Instagram"
@@ -40,7 +41,6 @@ author:
 # ---------------------------------------------------------------
 remote_theme: "mmistakes/minimal-mistakes@4.26.2"
 minimal_mistakes_skin: "air"
-# Outras opcoes: "default" | "aqua" | "contrast" | "dark" | "mint"
 
 # ---------------------------------------------------------------
 # IDIOMA E FUSO
@@ -58,28 +58,28 @@ comments:
   provider: false
 
 # ---------------------------------------------------------------
-# MENU DE NAVEGACAO (espelhando seu Google Sites)
+# MENU DE NAVEGACAO
 # ---------------------------------------------------------------
 navigation:
   main:
-    - title: "Inicio"
-      url: /
-    - title: "A Psicanalise"
-      url: /a-psicanalise/
-    - title: "Artigos e Reflexoes"
-      url: /artigos/
+    - title: "Início"
+      url: /amor-psicanalise/
+    - title: "A Psicanálise"
+      url: /amor-psicanalise/a-psicanalise/
+    - title: "Artigos e Reflexões"
+      url: /amor-psicanalise/artigos/
     - title: "Sobre esse Projeto"
-      url: /sobre/
+      url: /amor-psicanalise/sobre/
     - title: "Perguntas Frequentes"
-      url: /faq/
+      url: /amor-psicanalise/faq/
     - title: "Contato"
-      url: /contato/
+      url: /amor-psicanalise/contato/
 
 # ---------------------------------------------------------------
 # PAGINACAO
 # ---------------------------------------------------------------
 paginate: 6
-paginate_path: /page:num/
+paginate_path: /amor-psicanalise/page:num/
 
 # ---------------------------------------------------------------
 # DEFAULTS
@@ -116,7 +116,7 @@ plugins:
 # ---------------------------------------------------------------
 # SEO E BUSCA
 # ---------------------------------------------------------------
-og_image: "/assets/images/og-default.jpg"
+og_image: "/amor-psicanalise/assets/images/og-default.jpg"
 search: true
 search_full_content: true
 
@@ -133,8 +133,8 @@ footer:
       url: "https://wa.me/message/TMFLTRW6SXGFI1"
   text: >-
     © 2026 Gilton Vasconcelos. Todos os direitos reservados. |
-    <a href="/termos-de-uso">Termos de Uso</a> |
-    <a href="/politica-de-privacidade">Politica de Privacidade</a>
+    <a href="/amor-psicanalise/termos-de-uso/">Termos de Uso</a> |
+    <a href="/amor-psicanalise/politica-de-privacidade/">Política de Privacidade</a>
 
 # ---------------------------------------------------------------
 # ANALYTICS (descomente quando tiver o ID)
