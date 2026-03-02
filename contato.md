@@ -1,7 +1,7 @@
 ---
-layout: single
 title: "Contato"
-permalink: /contato/
+layout: single
+permalink: /amor-psicanalise/contato/
 author_profile: true
 ---
 
