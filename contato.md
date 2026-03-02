@@ -3,6 +3,8 @@ title: "Contato"
 layout: single
 permalink: /amor-psicanalise/contato/
 author_profile: true
+sidebar:
+  nav: sidebar  # LINHA ADICIONADA
 ---
 
 Ficou com alguma dúvida, sugestão ou simplesmente quer conversar?
