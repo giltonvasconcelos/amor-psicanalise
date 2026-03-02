@@ -1,15 +1,41 @@
-# _data/navigation.yml
+# _data/navigation.yml - Menu Lateral Esquerdo
 
-main:
-  - title: "Início"
-    url: /amor-psicanalise/
-  - title: "A Psicanálise"
-    url: /amor-psicanalise/a-psicanalise/
-  - title: "Artigos"
-    url: /amor-psicanalise/artigos/
-  - title: "Sobre"
-    url: /amor-psicanalise/sobre/
-  - title: "FAQ"
-    url: /amor-psicanalise/faq/
-  - title: "Contato"
-    url: /amor-psicanalise/contato/
+# Menu principal que aparecerá na sidebar
+sidebar:
+  - title: "Amor e Psicanálise"
+    children:
+      - title: "🏠 Início"
+        url: /amor-psicanalise/
+      - title: "📚 A Psicanálise"
+        url: /amor-psicanalise/a-psicanalise/
+      - title: "✍️ Artigos e Reflexões"
+        url: /amor-psicanalise/artigos/
+      - title: "👤 Sobre"
+        url: /amor-psicanalise/sobre/
+      - title: "❓ FAQ"
+        url: /amor-psicanalise/faq/
+      - title: "📧 Contato"
+        url: /amor-psicanalise/contato/
+
+  - title: "Categorias"
+    children:
+      - title: "🧠 Psicanálise"
+        url: /amor-psicanalise/categorias/psicanalise/
+      - title: "❤️ Amor"
+        url: /amor-psicanalise/categorias/amor/
+      - title: "🔍 Clínica"
+        url: /amor-psicanalise/categorias/clinica/
+      - title: "📖 Teoria"
+        url: /amor-psicanalise/categorias/teoria/
+
+  - title: "Links Úteis"
+    children:
+      - title: "📱 Instagram"
+        url: https://www.instagram.com/gilton__vasconcelos/
+        external: true
+      - title: "💬 WhatsApp"
+        url: https://wa.me/message/TMFLTRW6SXGFI1
+        external: true
+      - title: "📌 GitHub"
+        url: https://github.com/giltonvasconcelos
+        external: true
