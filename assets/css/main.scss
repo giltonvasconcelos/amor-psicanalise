@@ -1,0 +1,66 @@
+---
+---
+
+// Variáveis de cor
+$sidebar-bg: #faf7f2;
+$sidebar-link: #5a4a42;
+$sidebar-hover: #d4a5a5;
+
+// Estilo da sidebar
+.sidebar {
+  background-color: $sidebar-bg;
+  border-right: 1px solid #e5d9d0;
+  
+  .nav__list {
+    padding: 1em;
+    
+    .nav__title {
+      color: $sidebar-link;
+      font-size: 1.1em;
+      font-weight: bold;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    .nav__items {
+      a {
+        color: $sidebar-link;
+        padding: 0.3em 0.5em;
+        display: block;
+        border-radius: 4px;
+        transition: all 0.3s;
+        
+        &:hover {
+          background-color: $sidebar-hover;
+          color: white;
+          text-decoration: none;
+          padding-left: 1em;
+        }
+        
+        &.active {
+          background-color: $sidebar-link;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+// Responsividade: menu vira dropdown em mobile
+@media (max-width: 768px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    
+    .nav__list {
+      .nav__items {
+        display: none; // Esconde por padrão
+        &.active {
+          display: block; // Mostra quando ativo
+        }
+      }
+    }
+  }
+}
